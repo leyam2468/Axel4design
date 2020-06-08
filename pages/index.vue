@@ -1,12 +1,16 @@
 <template>
     <div class="header">
-        <h2 class="title colorOne">Axel 4 Design</h2>
-        <h2 class="title2">Axel 4 Design</h2>
+        <banner />
     </div>
 </template>
 
 <script>
+import banner from '@/components/home/banner.vue'
 export default {
+    components: {
+        banner
+    },
+    methods: {},
     head() {
         return {
             title: 'Home'

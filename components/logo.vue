@@ -1,6 +1,9 @@
 <template>
     <div class="mx-auto">
-        <nuxt-link class="logo" to="/">Axel<span>4</span>Design </nuxt-link>
+        <v-toolbar-title class="logo"
+            >Axel<span>4</span>Design
+        </v-toolbar-title>
+        <!-- <nuxt-link></nuxt-link> -->
     </div>
 </template>
 
@@ -12,7 +15,6 @@ export default {}
 .logo {
     font-size: 25px;
     font-weight: bold;
-    color: #fff;
     text-decoration: none;
     span {
         color: red;
