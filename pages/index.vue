@@ -21,9 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    height: 5600px;
-    .title {
-        color: $color-one;
-    }
+    height: 5000px;
 }
 </style>

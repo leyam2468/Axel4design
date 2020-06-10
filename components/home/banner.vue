@@ -1,53 +1,87 @@
 <template>
-    <div class="banner">
-        <div class="overlay"></div>
-        <div class="banner-info">
-            <h3>Welcome To</h3>
-            <h2>Axel<span>4</span>Design</h2>
-            <div class="media">
-                <v-btn
-                    icon
-                    href="https://www.google.com"
-                    target="_blank"
-                    class="media-icon"
-                >
-                    <v-icon>mdi-facebook</v-icon>
-                </v-btn>
-                <v-btn
-                    icon
-                    href="https://www.google.com"
-                    target="_blank"
-                    class="media-icon"
-                >
-                    <v-icon>mdi-instagram</v-icon>
-                </v-btn>
-                <v-btn
-                    icon
-                    href="https://www.google.com"
-                    target="_blank"
-                    class="media-icon"
-                >
-                    <v-icon>mdi-github</v-icon>
-                </v-btn>
+    <v-carousel
+        hide-delimiters
+        cycle
+        height="calc(100vh - 64px)"
+        show-arrows-on-hover
+        touchless
+    >
+        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
+            <div class="banner">
+                <div class="overlay"></div>
+                <div class="banner-info">
+                    <h3>Welcome To</h3>
+                    <h2>Axel<span>4</span>Design</h2>
+                    <div class="media">
+                        <v-btn
+                            icon
+                            href="https://www.google.com"
+                            target="_blank"
+                            class="media-icon"
+                        >
+                            <v-icon>mdi-facebook</v-icon>
+                        </v-btn>
+                        <v-btn
+                            icon
+                            href="https://www.google.com"
+                            target="_blank"
+                            class="media-icon"
+                        >
+                            <v-icon>mdi-instagram</v-icon>
+                        </v-btn>
+                        <v-btn
+                            icon
+                            href="https://www.google.com"
+                            target="_blank"
+                            class="media-icon"
+                        >
+                            <v-icon>mdi-github</v-icon>
+                        </v-btn>
+                        <v-btn
+                            icon
+                            href="https://www.google.com"
+                            target="_blank"
+                            class="media-icon"
+                        >
+                            <v-icon>mdi-whatsapp</v-icon>
+                        </v-btn>
+                    </div>
+                    <div class="links">
+                        <a class="cv" href="#"
+                            ><v-icon right>mdi-file-document-outline</v-icon> My
+                            CV
+                        </a>
+                        <a class="po" href="#"
+                            >My Portfolio
+                            <v-icon right>mdi-smart-card-outline</v-icon>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="links">
-                <a href="#">My CV</a>
-                <a href="#">My Portfolio</a>
-            </div>
-        </div>
-    </div>
+        </v-carousel-item>
+    </v-carousel>
 </template>
 
 <script>
-export default {}
+export default {
+    data() {
+        return {
+            items: [
+                {
+                    src: '/banner1.jpg'
+                },
+                {
+                    src: '/banner2.jpg'
+                }
+            ]
+        }
+    }
+}
 </script>
-
 <style lang="scss" scoped>
 .banner {
-    width: 100vw;
-    height: calc(100vh - 56px);
-    background-image: url(/banner1.jpg);
-    background-size: cover;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,26 +91,25 @@ export default {}
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.6);
+        background-color: rgba($color: #000000, $alpha: 0.5);
     }
     .banner-info {
         z-index: 2;
         text-align: center;
         color: white;
         h3 {
-            font-size: 2rem;
-
-            letter-spacing: 4px;
+            font-size: 3rem;
+            letter-spacing: 0px;
         }
         h2 {
-            font-size: 5rem;
-            letter-spacing: 5px;
+            font-size: 6rem;
+            letter-spacing: 8px;
             span {
                 color: $color-one;
             }
         }
         .media {
-            margin-bottom: 20px;
+            margin: 20px 0;
             color: white;
             .media-icon {
                 margin: 0 10px;
@@ -86,23 +119,53 @@ export default {}
                     transition: 0.5s;
                     &:hover {
                         color: $color-one;
+                        transform: scale(1.1);
                     }
                 }
             }
         }
-        .links a {
-            padding: 12px 15px;
-            text-decoration: none;
-            display: inline-block;
-            color: #fff;
-            font-weight: bold;
-            border: 2px solid #fff;
-            margin: 10px;
-            min-width: 140px;
-            transition: 0.5s;
-            &:hover {
-                color: $color-one;
-                border-color: $color-one;
+        .links {
+            a {
+                padding: 10px 15px;
+                text-decoration: none;
+                display: inline-block;
+                color: #fff;
+                font-weight: bold;
+                border: 1px solid #fff;
+                margin: 30px -1px;
+                min-width: 140px;
+                transition: 0.5s;
+                i {
+                    color: #fff;
+                }
+                &:hover {
+                    color: $color-one;
+                    border-color: $color-one;
+                    i {
+                        color: $color-one;
+                        transform: scale(1.5);
+                    }
+                }
+            }
+            .cv {
+                border-radius: 15px 0 0 15px;
+            }
+            .po {
+                border-radius: 0 15px 15px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .banner {
+        .banner-info {
+            h3 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 3.5rem;
             }
         }
     }

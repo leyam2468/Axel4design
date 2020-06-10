@@ -6,7 +6,6 @@
         <v-content>
             <nuxt />
         </v-content>
-        <!--  -->
     </v-app>
 </template>
 
@@ -19,4 +18,8 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+a {
+    text-decoration: none;
+}
+</style>

@@ -1,82 +1,100 @@
 <template>
-    <div dark>
-        <!--side nav -->
+    <div>
+        <!-- SideBar -->
         <v-navigation-drawer
-            v-model="drawer"
-            :mini-variant="miniVariant"
-            :clipped="clipped"
-            fixed
-            app
+            v-model="siteNav"
+            temporary
+            absolute
+            color="colorOne"
         >
-            <v-list>
-                <!-- icons -->
-                <v-list-item>
-                    <v-btn icon @click.stop="miniVariant = !miniVariant">
-                        <v-icon
-                            >mdi-{{
-                                `chevron-${miniVariant ? 'right' : 'left'}`
-                            }}</v-icon
-                        >
-                    </v-btn>
-                    <v-btn icon @click.stop="clipped = !clipped">
-                        <v-icon>mdi-application</v-icon>
-                    </v-btn>
-                    <v-btn icon @click="toggletheme">
-                        <v-icon>
-                            mdi-{{
-                                `moon-${darktheme ? 'waning-crescent' : 'full'}`
-                            }}</v-icon
-                        >
-                    </v-btn>
-                </v-list-item>
-                <!-- links -->
-                <v-list-item
-                    v-for="(item, i) in items"
-                    :key="i"
-                    :to="item.to"
-                    router
-                    exact
-                >
-                    <v-list-item-action>
-                        <v-icon>{{ item.icon }}</v-icon>
-                    </v-list-item-action>
+            <!-- 1 -->
+            <v-list dense nav class="py-0">
+                <!-- 1-1 -->
+                <v-list-item two-line>
+                    <v-list-item-avatar>
+                        <img
+                            src="https://randomuser.me/api/portraits/men/81.jpg"
+                        />
+                    </v-list-item-avatar>
                     <v-list-item-content>
-                        <v-list-item-title v-text="item.title" />
+                        <v-list-item-title>Mohamed Ahmed</v-list-item-title>
+                        <v-list-item-subtitle>WepDesign</v-list-item-subtitle>
                     </v-list-item-content>
+                </v-list-item>
+                <v-divider></v-divider>
+                <!-- 1-2 -->
+                <v-list-item
+                    v-for="item in items"
+                    :key="item.title"
+                    :to="item.to"
+                >
+                    <v-btn text>
+                        <v-icon left>{{ item.icon }}</v-icon>
+                        {{ item.title }}
+                    </v-btn>
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
 
-        <!--top nav-->
-        <v-app-bar app hide-on-scroll="">
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-            <logo />
-            <v-spacer class="hidden-xs-only"></v-spacer>
+        <!-- NavBar -->
+        <v-app-bar hide-on-scroll app class="navbar-area " color="colorOne">
+            <v-app-bar-nav-icon
+                @click.stop="siteNav = !siteNav"
+            ></v-app-bar-nav-icon>
+
+            <v-toolbar-title class="font-weight-bold">
+                Axel<span class="red--text">4</span>Design
+            </v-toolbar-title>
+
+            <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-xs-only">
-                <v-btn v-for="(item, i) in items" :key="i" :to="item.to">
-                    <!-- <v-icon>{{ item.icon }} </v-icon> -->
+                <v-btn v-for="item in items" :key="item.id" :to="item.to" text>
+                    <v-icon left>{{ item.icon }}</v-icon>
                     {{ item.title }}
                 </v-btn>
+
+                <v-menu left bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                        <v-btn icon v-bind="attrs" v-on="on">
+                            <v-icon>mdi-dots-vertical</v-icon>
+                        </v-btn>
+                        <v-btn icon @click="toggletheme">
+                            <v-icon>
+                                mdi-{{
+                                    `${
+                                        darktheme
+                                            ? 'moon-waning-crescent'
+                                            : 'brightness-6'
+                                    }`
+                                }}</v-icon
+                            >
+                        </v-btn>
+                    </template>
+
+                    <v-list>
+                        <v-list-item v-for="n in 5" :key="n" @click="() => {}">
+                            <v-list-item-title
+                                >Option {{ n }}</v-list-item-title
+                            >
+                        </v-list-item>
+                    </v-list>
+                </v-menu>
             </v-toolbar-items>
         </v-app-bar>
     </div>
 </template>
 
 <script>
-import logo from '@/components/logo.vue'
 export default {
-    components: {
-        logo
-    },
+    components: {},
     data() {
         return {
-            clipped: false,
-            drawer: false,
-            fixed: false,
+            siteNav: false,
+            darktheme: false,
             items: [
                 {
                     icon: 'mdi-apps',
-                    title: 'Welcome',
+                    title: 'Home',
                     to: '/'
                 },
                 {
@@ -95,11 +113,7 @@ export default {
                     to: '/portfolio'
                 }
             ],
-            miniVariant: false,
-            right: true,
-            rightDrawer: false,
-            title: 'Axel 4 Design',
-            darktheme: true
+            title: 'Axel 4 Design'
         }
     },
     methods: {
@@ -111,4 +125,39 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+/* .navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    .nav-prand a {
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        span {
+            color: $color-one;
+        }
+    }
+    .links {
+        width: 100%;
+        text-align: right;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 20px;
+            text-align: right;
+            display: inline-block;
+            &:hover {
+                background-color: $color-one;
+                color: #000;
+            }
+        }
+    }
+} */
+</style>
