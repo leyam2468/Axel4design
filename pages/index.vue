@@ -1,29 +1,29 @@
 <template>
-    <div class="header">
+    <v-app class="home">
         <banner />
-    </div>
+        <aboutMe />
+    </v-app>
 </template>
 
 <script>
 import banner from '@/components/home/banner.vue'
+import aboutMe from '@/components/home/aboutMe.vue'
 export default {
     components: {
-        banner
+        banner,
+        aboutMe
     },
     methods: {},
     head() {
         return {
             title: 'Home'
         }
-    },
-    transitions: {
-        mode: 'out-in'
     }
 }
 </script>
 
 <style lang="scss" scoped>
-.header {
+.home {
     height: 5000px;
 }
 </style>
