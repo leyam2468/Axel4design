@@ -48,6 +48,13 @@
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
+            <v-btn icon class="hidden-sm-and-up" @click="toggletheme">
+                <v-icon>
+                    mdi-{{
+                        `${darktheme ? 'moon-waning-crescent' : 'brightness-6'}`
+                    }}</v-icon
+                >
+            </v-btn>
             <v-toolbar-items class="hidden-xs-only">
                 <v-btn
                     v-for="item in items"

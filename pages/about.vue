@@ -19,10 +19,10 @@ export default {
         return {
             items: [
                 {
-                    src: '/banner1.jpg'
+                    src: require('~/assets/banner1.jpg')
                 },
                 {
-                    src: '/banner2.jpg'
+                    src: require('~/assets/banner2.jpg')
                 }
             ]
         }

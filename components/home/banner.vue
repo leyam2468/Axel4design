@@ -2,7 +2,7 @@
     <v-carousel
         hide-delimiters
         cycle
-        height="calc(100vh - 64px)"
+        height="calc(100vh - 50px)"
         show-arrows-on-hover
     >
         <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
@@ -54,7 +54,10 @@
                         </v-btn>
                     </div>
                     <div class="links">
-                        <a class="cv" href="#"
+                        <a
+                            class="cv"
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1lY-U-riIqcwhxPuL7k3DtJ1Zdr-4eydK/view?usp=sharing"
                             ><v-icon right>mdi-file-document-outline</v-icon> My
                             CV
                         </a>
@@ -75,10 +78,10 @@ export default {
         return {
             items: [
                 {
-                    src: '/banner1.jpg'
+                    src: require('~/assets/banner1.jpg')
                 },
                 {
-                    src: '/banner2.jpg'
+                    src: require('~/assets/banner2.jpg')
                 }
             ]
         }
