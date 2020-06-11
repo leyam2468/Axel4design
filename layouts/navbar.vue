@@ -32,13 +32,19 @@
         </v-navigation-drawer>
 
         <!-- NavBar -->
-        <v-app-bar hide-on-scroll app class="navbar-area " color="colorOne">
+        <v-app-bar
+            hide-on-scroll
+            app
+            class="navbar-area "
+            color="colorOne"
+            height="50px"
+        >
             <v-app-bar-nav-icon
                 @click.stop="siteNav = !siteNav"
             ></v-app-bar-nav-icon>
 
-            <v-toolbar-title class="font-weight-bold">
-                Axel<span class="red--text">4</span>Design
+            <v-toolbar-title class="font-weight-bold text-uppercase">
+                Axel<span class="color-one">4</span>Design
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
@@ -49,6 +55,7 @@
                     :to="item.to"
                     text
                     class="font-weight-bold"
+                    nuxt
                 >
                     <v-icon left>{{ item.icon }}</v-icon>
                     {{ item.title }}
@@ -113,8 +120,7 @@ export default {
                     title: 'Portfolio',
                     to: '/portfolio'
                 }
-            ],
-            title: 'Axel 4 Design'
+            ]
         }
     },
     methods: {
@@ -127,38 +133,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* .navbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    display: flex;
-    padding: 0 50px;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 3;
-    .nav-prand a {
-        font-size: 25px;
-        color: white;
-        font-weight: bold;
-        span {
-            color: $color-one;
-        }
-    }
-    .links {
-        width: 100%;
-        text-align: right;
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 15px 20px;
-            text-align: right;
-            display: inline-block;
-            &:hover {
-                background-color: $color-one;
-                color: #000;
-            }
-        }
-    }
-} */
+.v-btn--active:hover::before,
+.v-btn--active::before {
+    background-color: red;
+    opacity: 0.8;
+}
 </style>

@@ -27,12 +27,11 @@ export default {}
 
 <style lang="scss" scoped>
 .g-container {
-    padding: 80px 0;
     display: grid;
     //grid-template-columns: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 200px;
-    gap: 20px;
+    //gap: 20px;
     .box {
         display: flex;
         align-items: center;

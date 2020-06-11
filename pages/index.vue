@@ -15,6 +15,9 @@ export default {
         return {
             title: 'Home'
         }
+    },
+    transitions: {
+        mode: 'out-in'
     }
 }
 </script>
