@@ -112,6 +112,7 @@ margin: 30px -1px;
 min-width: 140px;
 transition: 0.5s;
 i {
+
 color: #fff;
 }
 &:hover {

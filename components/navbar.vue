@@ -1,12 +1,7 @@
 <template>
     <div>
         <!-- SideBar -->
-        <v-navigation-drawer
-            v-model="siteNav"
-            temporary
-            absolute
-            color="colorOne"
-        >
+        <v-navigation-drawer v-model="siteNav" temporary color="colorOne" fixed>
             <!-- 1 -->
             <v-list dense nav class="py-0">
                 <!-- 1-1 -->
@@ -48,7 +43,13 @@
 
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-xs-only">
-                <v-btn v-for="item in items" :key="item.id" :to="item.to" text>
+                <v-btn
+                    v-for="item in items"
+                    :key="item.id"
+                    :to="item.to"
+                    text
+                    class="font-weight-bold"
+                >
                     <v-icon left>{{ item.icon }}</v-icon>
                     {{ item.title }}
                 </v-btn>
