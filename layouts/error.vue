@@ -26,7 +26,7 @@ export default {
     },
     data() {
         return {
-            pageNotFound: '404 Not Found',
+            pageNotFound: 'Page Not Found',
             otherError: 'An error occurred'
         }
     },
@@ -52,7 +52,8 @@ h1 {
 }
 a {
     text-decoration: none;
-    background-color: white;
+    color: red;
+    border: 2px solid red;
     width: 150px;
     padding: 10px;
     text-align: center;
