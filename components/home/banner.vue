@@ -11,6 +11,7 @@
                 <div class="banner-info">
                     <h3>Welcome To</h3>
                     <h2>Axel<span>4</span>Design</h2>
+                    <v-divider></v-divider>
                     <div class="media">
                         <v-btn
                             icon
@@ -114,6 +115,7 @@ export default {
         h2 {
             font-size: 6rem;
             letter-spacing: 8px;
+
             span {
                 color: $color-one;
             }
@@ -177,10 +179,11 @@ export default {
         .banner-info {
             h3 {
                 font-size: 2rem;
+                letter-spacing: 5px;
             }
 
             h2 {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
             }
         }
     }

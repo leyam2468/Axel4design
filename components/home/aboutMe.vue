@@ -54,7 +54,7 @@
                         </ul>
                         <!--  -->
                         <v-row justify="center">
-                            <v-col>
+                            <v-col cols="6">
                                 <v-btn
                                     class="mr-5"
                                     href="tel:+201023909759"
@@ -64,7 +64,7 @@
                                     +201023909759</v-btn
                                 ></v-col
                             >
-                            <v-col>
+                            <v-col cols="6">
                                 <v-btn
                                     class="contact-me-btn"
                                     href="tel:+201023909759"
@@ -281,7 +281,7 @@ export default {}
                 .pro-title {
                     width: 120px;
                     &::after {
-                        right: 10px;
+                        right: 0px;
                     }
                 }
             }
