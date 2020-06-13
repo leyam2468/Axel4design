@@ -127,6 +127,16 @@ export default {
                     color: white;
                     font-size: 3rem;
                     transition: 0.5s;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: white;
+                    }
                     &:hover {
                         color: $color-one;
                         transform: scale(1.1);
@@ -170,7 +180,7 @@ export default {
             }
 
             h2 {
-                font-size: 2.9rem;
+                font-size: 2.8rem;
             }
         }
     }

@@ -7,9 +7,7 @@
                 <!-- 1-1 -->
                 <v-list-item two-line>
                     <v-list-item-avatar>
-                        <img
-                            src="https://randomuser.me/api/portraits/men/81.jpg"
-                        />
+                        <img src="~static/favicon.png" />
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-list-item-title>Mohamed Ahmed</v-list-item-title>
@@ -23,7 +21,7 @@
                     :key="item.title"
                     :to="item.to"
                 >
-                    <v-btn text>
+                    <v-btn text class="font-weight-bold" nuxt>
                         <v-icon left>{{ item.icon }}</v-icon>
                         {{ item.title }}
                     </v-btn>

@@ -65,10 +65,12 @@ export default {
             dark: true,
             themes: {
                 dark: {
-                    colorOne: '#000'
+                    colorOne: '#000',
+                    colorTow: '#ca0a0a'
                 },
                 light: {
-                    colorOne: '#fff'
+                    colorOne: '#fff',
+                    colorTow: '#ca0a0a'
                 }
             }
         }
