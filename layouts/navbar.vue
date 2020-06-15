@@ -1,20 +1,23 @@
 <template>
     <div>
         <!-- SideBar -->
-        <v-navigation-drawer v-model="siteNav" temporary color="colorOne" fixed>
-            <!-- 1 -->
-            <v-list dense nav class="py-0">
-                <!-- 1-1 -->
-                <v-list-item two-line>
-                    <v-list-item-avatar>
-                        <img src="~static/favicon.png" />
-                    </v-list-item-avatar>
-                    <v-list-item-content>
-                        <v-list-item-title>Mohamed Ahmed</v-list-item-title>
-                        <v-list-item-subtitle>WepDesign</v-list-item-subtitle>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-divider></v-divider>
+
+        <v-navigation-drawer v-model="siteNav" color="colorOne" fixed temporary>
+            <v-img
+                :aspect-ratio="16 / 9"
+                src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+            >
+                <v-row
+                    align="end"
+                    class="lightbox white--text pa-2 fill-height"
+                >
+                    <v-col>
+                        <div class="subheading">Mohamed Ahmed</div>
+                        <div class="body-1">leyamm3@gmail.com</div>
+                    </v-col>
+                </v-row>
+            </v-img>
+            <v-list dense nav class="py-5">
                 <!-- 1-2 -->
                 <v-list-item
                     v-for="item in items"

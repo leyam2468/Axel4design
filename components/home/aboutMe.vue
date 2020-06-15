@@ -40,7 +40,7 @@
                                 <li>
                                     <span class="pro-title">Location</span
                                     ><span class="pro-des"
-                                        >Al Behara , Kafr Al Dwar</span
+                                        >Al Behara,Kafr Aldwar</span
                                     >
                                 </li>
                                 <li>
