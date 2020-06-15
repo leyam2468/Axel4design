@@ -67,14 +67,16 @@
                             <v-col cols="6">
                                 <v-btn
                                     class="contact-me-btn"
-                                    to="/contact"
+                                    href="https://drive.google.com/file/d/1lY-U-riIqcwhxPuL7k3DtJ1Zdr-4eydK/view?usp=sharing"
                                     color="colorOne"
                                     height="50px"
+                                    min-width="200px"
                                     elevation="5"
+                                    target="_blank"
                                     ><v-icon left
-                                        >mdi-comment-processing-outline</v-icon
+                                        >mdi-smart-card-outline</v-icon
                                     >
-                                    Contact Me</v-btn
+                                    My CV</v-btn
                                 ></v-col
                             >
                         </v-row>

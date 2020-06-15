@@ -2,7 +2,14 @@
     <v-app>
         <div class="banner">
             <div class="overlay"></div>
-            <vue-particles color="#555" class="vue-particles"></vue-particles>
+            <no-ssr
+                ><vue-particles
+                    color="#fff"
+                    class="vue-particles"
+                    particle-opacity=".7"
+                    lines-width="2"
+                ></vue-particles
+            ></no-ssr>
             <div class="banner-info">
                 <h3>Welcome To</h3>
                 <h2>Axel<span>4</span>Design</h2>
@@ -38,6 +45,14 @@
                         target="_blank"
                         class="media-icon"
                     >
+                        <v-icon>mdi-codepen</v-icon>
+                    </v-btn>
+                    <v-btn
+                        icon
+                        href="https://www.google.com"
+                        target="_blank"
+                        class="media-icon"
+                    >
                         <v-icon>mdi-whatsapp</v-icon>
                     </v-btn>
                     <v-btn
@@ -48,23 +63,6 @@
                     >
                         <v-icon>mdi-gmail</v-icon>
                     </v-btn>
-                </div>
-                <div class="links">
-                    <a
-                        class="cv"
-                        target="_blank"
-                        href="https://drive.google.com/file/d/1lY-U-riIqcwhxPuL7k3DtJ1Zdr-4eydK/view?usp=sharing"
-                        ><v-icon right class="hidden-xs-only"
-                            >mdi-file-document-outline</v-icon
-                        >
-                        My CV
-                    </a>
-                    <a class="po" href="#"
-                        >My Portfolio
-                        <v-icon right class="hidden-xs-only"
-                            >mdi-smart-card-outline</v-icon
-                        >
-                    </a>
                 </div>
             </div>
         </div>
@@ -106,7 +104,7 @@ export default {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.4);
+        background-color: rgba($color: #000000, $alpha: 0.5);
     }
     .banner-info {
         z-index: 2;
