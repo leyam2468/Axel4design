@@ -6,8 +6,6 @@
                 ><vue-particles
                     color="#fff"
                     class="vue-particles"
-                    particle-opacity=".7"
-                    lines-width="2"
                 ></vue-particles
             ></no-ssr>
             <div class="banner-info">
@@ -90,6 +88,8 @@ export default {
     width: 100%;
     height: calc(100vh - 50px);
     background-image: url(~assets/banner1.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
