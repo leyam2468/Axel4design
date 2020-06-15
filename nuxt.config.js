@@ -31,7 +31,7 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: [{ src: '~plugins/vue-particles', ssr: false }],
     /*
      ** Nuxt.js dev-modules
      */
@@ -82,6 +82,16 @@ export default {
         /*
          ** You can extend webpack config here
          */
-        extend(config, ctx) {}
+        extend(config, ctx) {
+            if (ctx.isClient) {
+                config.module.rules.push({
+                    enforce: 'pre',
+                    test: /\.(js|vue)$/,
+                    loader: 'eslint-loader',
+                    exclude: /(node_modules)/
+                })
+            }
+        }
+        /* transpile: ['VueParticles'] */
     }
 }

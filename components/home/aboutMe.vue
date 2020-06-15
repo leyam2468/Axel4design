@@ -67,7 +67,7 @@
                             <v-col cols="6">
                                 <v-btn
                                     class="contact-me-btn"
-                                    href="tel:+201023909759"
+                                    to="/contact"
                                     color="colorOne"
                                     height="50px"
                                     elevation="5"
@@ -281,10 +281,19 @@ export default {}
                 .pro-title {
                     width: 120px;
                     &::after {
-                        right: 0px;
+                        right: 5px;
                     }
                 }
             }
+        }
+
+        .about-img {
+            &::after {
+                right: -5px;
+            }
+        }
+        .my-skils div {
+            padding-bottom: 0;
         }
     }
 }
