@@ -147,12 +147,9 @@ export default {
 @media (max-width: 570px) {
     .portfolio {
         .portfolio-title-be {
-            font-size: 6rem;
-            margin-bottom: -90px;
+            letter-spacing: 15px;
         }
-        .portfolio-title {
-            font-size: 2rem;
-        }
+
         .box-img {
             .img-title {
                 font-size: 20px;
