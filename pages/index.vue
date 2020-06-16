@@ -3,6 +3,7 @@
         <banner />
         <aboutMe />
         <portfolio />
+        <clientsay />
     </v-app>
 </template>
 
@@ -10,12 +11,14 @@
 import banner from '@/components/home/banner.vue'
 import aboutMe from '@/components/home/aboutMe.vue'
 import portfolio from '@/components/home/portfolio.vue'
+import clientsay from '@/components/home/clientsay.vue'
 
 export default {
     components: {
         banner,
         aboutMe,
-        portfolio
+        portfolio,
+        clientsay
     },
     methods: {},
     head() {

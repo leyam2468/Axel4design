@@ -66,11 +66,13 @@ export default {
             themes: {
                 dark: {
                     colorOne: '#000',
-                    colorTow: '#ca0a0a'
+                    colorTow: '#ca0a0a',
+                    colorThree: '#fff'
                 },
                 light: {
                     colorOne: '#fff',
-                    colorTow: '#ca0a0a'
+                    colorTow: '#ca0a0a',
+                    colorThree: '#000'
                 }
             }
         }
