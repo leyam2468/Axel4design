@@ -2,10 +2,7 @@
     <div>
         <!-- SideBar -->
         <v-navigation-drawer v-model="siteNav" color="colorOne" fixed temporary>
-            <v-img
-                :aspect-ratio="16 / 9"
-                src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-            >
+            <v-img :aspect-ratio="16 / 9" :src="src">
                 <v-row
                     align="end"
                     class="lightbox white--text pa-2 fill-height"
@@ -28,6 +25,8 @@
                         {{ item.title }}
                     </v-btn>
                 </v-list-item>
+                <v-spacer></v-spacer>
+                <v-btn block>Login</v-btn>
             </v-list>
         </v-navigation-drawer>
 
@@ -106,6 +105,7 @@ export default {
         return {
             siteNav: false,
             darktheme: false,
+            src: require('~/assets/me2.jpg'),
             items: [
                 {
                     icon: 'mdi-apps',

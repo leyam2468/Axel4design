@@ -7,7 +7,7 @@
                 <v-col
                     v-for="item in items"
                     :key="item.id"
-                    cols="12"
+                    cols="6"
                     sm="6"
                     md="4"
                     lg="3"
@@ -35,11 +35,11 @@ export default {
             items: [
                 {
                     title: 'Title Image',
-                    src: require('~/assets/banner1.jpg')
+                    src: require('~/assets/tem7.jpg')
                 },
                 {
                     title: 'Title Image',
-                    src: require('~/assets/banner2.jpg')
+                    src: require('~/assets/tem8.jpg')
                 },
                 {
                     title: 'Title Image',
@@ -140,6 +140,27 @@ export default {
             }
             .img-title {
                 opacity: 1;
+            }
+        }
+    }
+}
+@media (max-width: 570px) {
+    .portfolio {
+        .portfolio-title-be {
+            font-size: 6rem;
+            margin-bottom: -90px;
+        }
+        .portfolio-title {
+            font-size: 2rem;
+        }
+        .box-img {
+            .img-title {
+                font-size: 20px;
+                a {
+                    padding: 5px 10px;
+                    letter-spacing: 3px;
+                    font-weight: normal;
+                }
             }
         }
     }
