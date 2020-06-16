@@ -102,7 +102,7 @@ export default {
 @media (max-width: 570px) {
     .clientsay {
         .clientsay-title-be {
-            letter-spacing: 15px;
+            letter-spacing: 10px;
         }
     }
 }

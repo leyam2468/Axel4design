@@ -147,7 +147,7 @@ export default {
 @media (max-width: 570px) {
     .portfolio {
         .portfolio-title-be {
-            letter-spacing: 15px;
+            letter-spacing: 10px;
         }
 
         .box-img {
