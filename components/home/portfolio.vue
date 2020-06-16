@@ -35,6 +35,14 @@ export default {
             items: [
                 {
                     title: 'Title Image',
+                    src: require('~/assets/tem5.jpg')
+                },
+                {
+                    title: 'Title Image',
+                    src: require('~/assets/tem6.jpeg')
+                },
+                {
+                    title: 'Title Image',
                     src: require('~/assets/tem7.jpg')
                 },
                 {
@@ -43,27 +51,19 @@ export default {
                 },
                 {
                     title: 'Title Image',
-                    src: require('~/assets/tem1.jpeg')
+                    src: require('~/assets/tem12.jpg')
                 },
                 {
                     title: 'Title Image',
-                    src: require('~/assets/tem2.jpeg')
+                    src: require('~/assets/tem13.jpg')
                 },
                 {
                     title: 'Title Image',
-                    src: require('~/assets/tem3.webp')
+                    src: require('~/assets/tem14.jpg')
                 },
                 {
                     title: 'Title Image',
-                    src: require('~/assets/tem4.jpeg')
-                },
-                {
-                    title: 'Title Image',
-                    src: require('~/assets/tem5.png')
-                },
-                {
-                    title: 'Title Image',
-                    src: require('~/assets/tem6.webp')
+                    src: require('~/assets/tem15.jpg')
                 }
             ]
         }
