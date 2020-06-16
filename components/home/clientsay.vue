@@ -99,4 +99,11 @@ export default {
         letter-spacing: 10px;
     }
 }
+@media (max-width: 570px) {
+    .clientsay {
+        .clientsay-title-be {
+            letter-spacing: 15px;
+        }
+    }
+}
 </style>
