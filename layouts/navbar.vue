@@ -1,7 +1,6 @@
 <template>
     <div>
         <!-- SideBar -->
-
         <v-navigation-drawer v-model="siteNav" color="colorOne" fixed temporary>
             <v-img
                 :aspect-ratio="16 / 9"
