@@ -12,8 +12,8 @@
                         class="elevation-5"
                     >
                         <v-window-item
-                            v-for="item in items"
-                            :key="item"
+                            v-for="(item, index) in items"
+                            :key="index"
                             transition="fade-transition"
                         >
                             <v-card flat class="client-box" min-height="250px">
@@ -51,19 +51,19 @@ export default {
             items: [
                 {
                     title: 'Mohamed Ahmed',
-                    src: require('~/assets/tem8.jpg'),
+                    src: require('~/assets/person-1.png'),
                     dis:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni?'
                 },
                 {
                     title: 'Mohamed Mahmoud',
-                    src: require('~/assets/tem7.jpg'),
+                    src: require('~/assets/person-3.png'),
                     dis:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni?'
                 },
                 {
                     title: 'Nour Nabil',
-                    src: require('~/assets/tem7.jpg'),
+                    src: require('~/assets/person-1.png'),
                     dis:
                         'Lorem ipsum dolst iste commotecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui numquam dicta, facilis, at eum molestiae dolorum est iste commodi ipsum itaque vero accusantium illo architecto nisi debitis fugiat aliquid magni?'
                 }

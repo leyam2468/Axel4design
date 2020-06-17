@@ -4,7 +4,7 @@
             <div class="overlay"></div>
             <no-ssr
                 ><vue-particles
-                    color="#fff"
+                    color="#f00"
                     class="vue-particles"
                 ></vue-particles
             ></no-ssr>
@@ -83,6 +83,7 @@ export default {
     }
 }
 </script>
+
 <style lang="scss" scoped>
 .banner {
     width: 100%;
