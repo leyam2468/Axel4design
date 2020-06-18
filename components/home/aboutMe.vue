@@ -304,6 +304,7 @@ export default {}
                 .info-area {
                     .pro-title {
                         width: 120px;
+                        font-family: $font-one;
                         &::after {
                             right: 5px;
                         }

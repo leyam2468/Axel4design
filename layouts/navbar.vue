@@ -42,7 +42,7 @@
                 @click.stop="siteNav = !siteNav"
             ></v-app-bar-nav-icon>
 
-            <v-toolbar-title class="font-weight-bold text-uppercase">
+            <v-toolbar-title class="font-weight-bold text-uppercase font-one">
                 Axel<span class="color-one">4</span>Design
             </v-toolbar-title>
 

@@ -1,9 +1,13 @@
 $color-one: #ca0a0a;
+$font-one: 'Lato', sans-serif !important;
 .color-one {
     color: $color-one;
 }
 .color-one-bg {
     background-color: $color-one;
+}
+.font-one {
+    font-family: 'Lato', sans-serif;
 }
 .page-enter-active,
 .page-leave-active {
@@ -13,4 +17,9 @@ $color-one: #ca0a0a;
 .page-leave-active {
     opacity: 0;
     transform: scale(0);
+}
+body,
+h1,
+h2 {
+    font-family: 'Lato', sans-serif;
 }

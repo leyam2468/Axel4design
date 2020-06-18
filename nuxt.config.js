@@ -18,7 +18,15 @@ export default {
                 content: process.env.npm_package_description || ''
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }]
+        link: [
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+
+            {
+                rel: 'stylesheet',
+                href:
+                    'https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,900&display=swap'
+            }
+        ]
     },
     /*
      ** Customize the progress-bar color
