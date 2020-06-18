@@ -1,7 +1,7 @@
 <template>
     <div class="fotter">
         <h4>
-            @CopyRight 2020 rights Reserved By
+            @Copyright 2020 All Right Reserved By
             <a href="https://www.facebook.com/leyam24685">Mohamed Ahmed</a>
         </h4>
     </div>
