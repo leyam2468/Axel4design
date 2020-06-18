@@ -4,11 +4,7 @@
             <div class="overlay"></div>
             <no-ssr
                 ><vue-particles
-                    color="#f00"
                     class="vue-particles"
-                    :particle-opacity="0.5"
-                    lines-color="#f00"
-                    :particles-number="100"
                     shape-type="edge"
                 ></vue-particles
             ></no-ssr>
