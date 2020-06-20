@@ -11,7 +11,7 @@
                     sm="6"
                     md="4"
                     lg="3"
-                    data-aos="flip-down"
+                    data-aos="fade-down"
                 >
                     <div class="box-img">
                         <v-img
