@@ -140,4 +140,11 @@ export default {
         letter-spacing: 10px;
     }
 }
+@media (max-width: 570px) {
+    .posts {
+        .posts-title-be {
+            letter-spacing: 10px;
+        }
+    }
+}
 </style>
