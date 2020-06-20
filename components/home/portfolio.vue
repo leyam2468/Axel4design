@@ -74,6 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio {
+    overflow: hidden;
     .portfolio-title-be {
         text-align: center;
         display: block;
