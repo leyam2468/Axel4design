@@ -11,7 +11,7 @@
                     sm="6"
                     md="4"
                     lg="3"
-                    data-aos="fade-down"
+                    data-aos="fade-up"
                 >
                     <div class="box-img">
                         <v-img
