@@ -4,7 +4,7 @@
         <h2 class="posts-title" data-aos="fade-up">
             Last Posts
         </h2>
-        <div class="posts-area" data-aos="fade-up">
+        <div class="posts-area my-4" data-aos="fade-up">
             <v-container>
                 <v-row>
                     <v-col cols="12" sm="6" md="4">
