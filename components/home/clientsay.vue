@@ -11,7 +11,7 @@
                         show-arrows
                         show-arrows-on-hover
                         class="elevation-5"
-                        data-aos="zoom-in-up"
+                        data-aos="zoom-in"
                     >
                         <v-window-item
                             v-for="(item, index) in items"
@@ -173,7 +173,7 @@ export default {
 @media (max-width: 570px) {
     .clientsay {
         .clientsay-title-be {
-            letter-spacing: 10px;
+            letter-spacing: 8px;
         }
         .box-info {
             h2 {
