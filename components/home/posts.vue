@@ -4,10 +4,10 @@
         <h2 class="posts-title" data-aos="fade-up">
             Last Posts
         </h2>
-        <div class="posts-area">
+        <div class="posts-area" data-aos="fade-up">
             <v-container>
                 <v-row>
-                    <v-col cols="12" sm="6" md="4" data-aos="fade-right">
+                    <v-col cols="12" sm="6" md="4">
                         <v-card>
                             <v-img :src="src" height="250"></v-img>
                             <v-card-title>AbouKir Hight instsint</v-card-title>
@@ -40,7 +40,7 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="6" md="4" data-aos="fade-up">
+                    <v-col cols="12" sm="6" md="4">
                         <v-card>
                             <v-img :src="src" height="250"></v-img>
                             <v-card-title>AbouKir Hight instsint</v-card-title>
@@ -73,7 +73,7 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="6" md="4" data-aos="fade-left">
+                    <v-col cols="12" sm="6" md="4">
                         <v-card>
                             <v-img :src="src" height="250"></v-img>
                             <v-card-title>AbouKir Hight instsint</v-card-title>
