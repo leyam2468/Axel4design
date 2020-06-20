@@ -11,7 +11,9 @@
                     <v-col cols="12" sm="6">
                         <div class="about-info">
                             <h2 class="title-about">
-                                I'm <span> Front End</span> Developer
+                                I'm
+                                <span> Front End</span>
+                                Developer
                             </h2>
                             <p class="title-about-des">
                                 Lorem ipsum dolor sit, amet consectetur
@@ -20,7 +22,11 @@
                             </p>
                             <v-divider></v-divider>
                             <!--  -->
-                            <ul class="info-area">
+                            <ul
+                                class="info-area"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                            >
                                 <li>
                                     <span class="pro-title">Name</span
                                     ><span class="pro-des">Mohamed Ahmed</span>
@@ -63,6 +69,7 @@
                                         height="50px"
                                         elevation="15"
                                         width="95%"
+                                        data-aos="zoom-in"
                                         ><v-icon left class="hiddin-xs-only"
                                             >mdi-phone</v-icon
                                         >
@@ -78,6 +85,7 @@
                                         elevation="10"
                                         width="95%"
                                         target="_blank"
+                                        data-aos="zoom-in"
                                         ><v-icon left
                                             >mdi-smart-card-outline</v-icon
                                         >
@@ -101,7 +109,7 @@
                 </v-row>
             </v-card>
             <!-- Skils -->
-            <v-row class="my-skils">
+            <v-row class="my-skils" data-aos="zoom-up" data-aos-duration="1500">
                 <v-col cols="12" md="6">
                     <v-progress-linear
                         value="99"

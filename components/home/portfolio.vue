@@ -1,7 +1,7 @@
 <template>
     <div class="portfolio">
-        <span class="portfolio-title-be">Axel</span>
-        <h2 class="portfolio-title">Portfolio</h2>
+        <span class="portfolio-title-be" data-aos="fade-up">Axel</span>
+        <h2 class="portfolio-title" data-aos="fade-up">Portfolio</h2>
         <div class="portfolio-item my-10">
             <v-row no-gutters>
                 <v-col
@@ -11,6 +11,7 @@
                     sm="6"
                     md="4"
                     lg="3"
+                    data-aos="flip-down"
                 >
                     <div class="box-img">
                         <v-img

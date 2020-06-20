@@ -1,18 +1,20 @@
 <template>
     <div class="posts">
-        <span class="posts-title-be">Axel</span>
-        <h2 class="posts-title">Last Posts</h2>
+        <span class="posts-title-be" data-aos="fade-up">Axel</span>
+        <h2 class="posts-title" data-aos="fade-up">
+            Last Posts
+        </h2>
         <div class="posts-area">
             <v-container>
                 <v-row>
-                    <v-col cols="12" sm="6" md="4">
+                    <v-col cols="12" sm="6" md="4" data-aos="fade-right">
                         <v-card>
                             <v-img :src="src" height="250"></v-img>
                             <v-card-title>AbouKir Hight instsint</v-card-title>
                             <v-card-text
                                 ><v-row align="center" class="mx-0"
                                     ><v-rating
-                                        value="4.5"
+                                        :value="4.5"
                                         color="colorTow"
                                         dense
                                         half-increments
@@ -24,7 +26,7 @@
                                 </v-row>
 
                                 <div class="my-4 subtitle-1">
-                                    $Univeristy
+                                    $Univeristy $Coming Soon
                                 </div>
                                 <div>
                                     Lorem ipsum dolor sit amet consectetur,
@@ -38,14 +40,14 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="6" md="4">
+                    <v-col cols="12" sm="6" md="4" data-aos="fade-up">
                         <v-card>
                             <v-img :src="src" height="250"></v-img>
                             <v-card-title>AbouKir Hight instsint</v-card-title>
                             <v-card-text
                                 ><v-row align="center" class="mx-0"
                                     ><v-rating
-                                        value="4.5"
+                                        :value="4.5"
                                         color="colorTow"
                                         dense
                                         half-increments
@@ -57,7 +59,7 @@
                                 </v-row>
 
                                 <div class="my-4 subtitle-1">
-                                    $Univeristy
+                                    $Univeristy $Coming Soon
                                 </div>
                                 <div>
                                     Lorem ipsum dolor sit amet consectetur,
@@ -71,14 +73,14 @@
                             </v-card-actions>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="6" md="4">
+                    <v-col cols="12" sm="6" md="4" data-aos="fade-left">
                         <v-card>
                             <v-img :src="src" height="250"></v-img>
                             <v-card-title>AbouKir Hight instsint</v-card-title>
                             <v-card-text
                                 ><v-row align="center" class="mx-0"
                                     ><v-rating
-                                        value="4.5"
+                                        :value="4.5"
                                         color="colorTow"
                                         dense
                                         half-increments
@@ -90,7 +92,7 @@
                                 </v-row>
 
                                 <div class="my-4 subtitle-1">
-                                    $Univeristy
+                                    $Univeristy $Coming Soon
                                 </div>
                                 <div>
                                     Lorem ipsum dolor sit amet consectetur,
@@ -116,11 +118,20 @@ export default {
         return {
             src: require('~/assets/tem5.jpg')
         }
-    }
+    },
+    transitions: 'posts'
 }
 </script>
 
 <style lang="scss" scoped>
+.posts.enter-active,
+.potsts-leave-active {
+    transition: opacity 1.5s;
+}
+.posts-enter,
+.posts-leave-to {
+    opacity: 0;
+}
 .posts {
     .posts-title-be {
         text-align: center;

@@ -35,11 +35,14 @@ export default {
     /*
      ** Global CSS
      */
-    css: ['@/assets/css/main.scss'],
+    css: ['@/assets/css/main.scss', 'aos/dist/aos.css'],
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [{ src: '~plugins/vue-particles', ssr: false }],
+    plugins: [
+        { src: '~plugins/vue-particles', ssr: false },
+        { src: '~plugins/aos', ssr: false }
+    ],
     /*
      ** Nuxt.js dev-modules
      */
@@ -101,7 +104,8 @@ export default {
                     exclude: /(node_modules)/
                 })
             }
-        }
+        },
+        vandor: ['aos']
         /* transpile: ['VueParticles'] */
     }
 }

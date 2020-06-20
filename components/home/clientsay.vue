@@ -1,7 +1,7 @@
 <template>
     <div class="clientsay">
-        <span class="clientsay-title-be">Axel</span>
-        <h2 class="clientsay-title">Client Say</h2>
+        <span class="clientsay-title-be" data-aos="fade-up">Axel</span>
+        <h2 class="clientsay-title" data-aos="fade-up">Client Say</h2>
         <!-- slider Client Say -->
         <div class="client-info my-5">
             <v-container>
@@ -11,6 +11,7 @@
                         show-arrows
                         show-arrows-on-hover
                         class="elevation-5"
+                        data-aos="zoom-in-up"
                     >
                         <v-window-item
                             v-for="(item, index) in items"
@@ -43,7 +44,7 @@
         <div class="box-info">
             <v-container>
                 <v-row>
-                    <v-col cols="6" md="3"
+                    <v-col cols="6" md="3" data-aos="flip-left"
                         ><v-card
                             class="py-5"
                             height="250px"
@@ -56,7 +57,7 @@
                             <h2 class="py-5">Happy Clients</h2></v-card
                         ></v-col
                     >
-                    <v-col cols="6" md="3"
+                    <v-col cols="6" md="3" data-aos="flip-left"
                         ><v-card
                             class="py-5"
                             height="250px"
@@ -69,7 +70,7 @@
                             <h2 class="py-5">Projects</h2></v-card
                         ></v-col
                     >
-                    <v-col cols="6" md="3"
+                    <v-col cols="6" md="3" data-aos="flip-left"
                         ><v-card
                             class="py-5"
                             height="250px"
@@ -82,7 +83,7 @@
                             <h2 class="py-5">Awards Received</h2></v-card
                         ></v-col
                     >
-                    <v-col cols="6" md="3"
+                    <v-col cols="6" md="3" data-aos="flip-left"
                         ><v-card
                             class="py-5"
                             height="250px"
