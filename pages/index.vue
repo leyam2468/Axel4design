@@ -4,6 +4,7 @@
         <aboutMe />
         <portfolio />
         <clientsay />
+        <posts />
         <fotter />
     </v-app>
 </template>
@@ -13,6 +14,7 @@ import banner from '@/components/home/banner.vue'
 import aboutMe from '@/components/home/aboutMe.vue'
 import portfolio from '@/components/home/portfolio.vue'
 import clientsay from '@/components/home/clientsay.vue'
+import posts from '@/components/home/posts.vue'
 import fotter from '@/components/home/fotter.vue'
 
 export default {
@@ -21,6 +23,7 @@ export default {
         aboutMe,
         portfolio,
         clientsay,
+        posts,
         fotter
     },
     methods: {},
