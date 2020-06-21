@@ -277,8 +277,8 @@ export default {}
         }
         .about-img {
             height: 500px;
-            padding: 5px;
-            border: 1px solid #555;
+            padding: 3px;
+            border: 1px solid #999;
             position: relative;
             z-index: 1;
             img {
@@ -287,8 +287,8 @@ export default {}
             &::after {
                 position: absolute;
                 content: '';
-                background-color: $color-one;
-                opacity: 0.7;
+                background: linear-gradient(220deg, $color-one 0%, #000 50%);
+
                 border-radius: 5px;
                 top: -20px;
                 right: -20px;

@@ -105,7 +105,11 @@ export default {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+        background: linear-gradient(
+            220deg,
+            rgba(255, 0, 0, 0.4) 0%,
+            rgba(0, 0, 0, 0.7) 50%
+        );
     }
     .banner-info {
         z-index: 2;

@@ -36,7 +36,7 @@
                             </v-card-text>
                             <v-divider class="mx-4"></v-divider>
                             <v-card-actions>
-                                <v-btn text>Read More</v-btn>
+                                <v-btn text color="colorTow">Read More</v-btn>
                             </v-card-actions>
                         </v-card>
                     </v-col>
@@ -69,7 +69,7 @@
                             </v-card-text>
                             <v-divider class="mx-4"></v-divider>
                             <v-card-actions>
-                                <v-btn text>Read More</v-btn>
+                                <v-btn text color="colorTow">Read More</v-btn>
                             </v-card-actions>
                         </v-card>
                     </v-col>
@@ -102,7 +102,7 @@
                             </v-card-text>
                             <v-divider class="mx-4"></v-divider>
                             <v-card-actions>
-                                <v-btn text>Read More</v-btn>
+                                <v-btn text color="colorTow">Read More</v-btn>
                             </v-card-actions>
                         </v-card>
                     </v-col>
