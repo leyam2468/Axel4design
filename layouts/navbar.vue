@@ -2,13 +2,15 @@
     <div>
         <!-- SideBar -->
         <v-navigation-drawer v-model="siteNav" color="colorOne" fixed temporary>
-            <v-img :aspect-ratio="16 / 10" :src="src">
+            <v-img :aspect-ratio="16 / 10" :src="src" position="bottom">
                 <v-row
                     align="end"
                     class="lightbox white--text pa-2 fill-height"
                 >
                     <v-col>
-                        <div class="subheading">Mohamed Ahmed</div>
+                        <div class="subheading font-one font-weight-bold">
+                            Mohamed Ahmed
+                        </div>
                         <div class="body-1">leyamm3@gmail.com</div>
                     </v-col>
                 </v-row>
@@ -112,7 +114,7 @@ export default {
             dialog: false,
             siteNav: false,
             darktheme: false,
-            src: require('~/assets/logo.png'),
+            src: require('~/assets/logo2.png'),
             items: [
                 {
                     icon: 'mdi-apps',
