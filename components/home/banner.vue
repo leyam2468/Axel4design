@@ -2,12 +2,12 @@
     <v-app>
         <div class="banner">
             <div class="overlay"></div>
-            <no-ssr
+            <client-only
                 ><vue-particles
                     class="vue-particles"
                     shape-type="edge"
                 ></vue-particles
-            ></no-ssr>
+            ></client-only>
             <div class="banner-info">
                 <h3>Welcome To</h3>
                 <h2>Axel<span>4</span>Design</h2>
