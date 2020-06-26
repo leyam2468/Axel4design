@@ -114,10 +114,10 @@
         <!-- skils Imgs -->
         <v-row justify="center">
             <v-col
-                cols="6"
-                md="2"
                 v-for="skil in skils"
                 :key="skil.index"
+                cols="6"
+                md="2"
                 data-aos="zoom-up"
                 data-aos-duration="1500"
             >

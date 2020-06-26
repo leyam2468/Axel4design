@@ -8,11 +8,11 @@
             <v-container>
                 <v-row>
                     <v-col
-                        cols="12"
-                        sm="6"
-                        md="4"
                         v-for="post in posts"
                         :key="post.title"
+                        md="4"
+                        cols="12"
+                        sm="6"
                     >
                         <v-card>
                             <v-img :src="post.src" height="250"></v-img>
