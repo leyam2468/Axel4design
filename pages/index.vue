@@ -5,6 +5,7 @@
         <portfolio />
         <clientsay />
         <posts />
+        <persons />
         <fotter />
     </v-app>
 </template>
@@ -15,6 +16,7 @@ import aboutMe from '@/components/home/aboutMe.vue'
 import portfolio from '@/components/home/portfolio.vue'
 import clientsay from '@/components/home/clientsay.vue'
 import posts from '@/components/home/posts.vue'
+import persons from '@/components/home/persons.vue'
 import fotter from '@/components/home/fotter.vue'
 
 export default {
@@ -24,6 +26,7 @@ export default {
         portfolio,
         clientsay,
         posts,
+        persons,
         fotter
     },
     methods: {},

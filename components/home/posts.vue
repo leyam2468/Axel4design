@@ -7,10 +7,16 @@
         <div class="posts-area my-4" data-aos="fade-up">
             <v-container>
                 <v-row>
-                    <v-col cols="12" sm="6" md="4">
+                    <v-col
+                        cols="12"
+                        sm="6"
+                        md="4"
+                        v-for="post in posts"
+                        :key="post.title"
+                    >
                         <v-card>
-                            <v-img :src="src" height="250"></v-img>
-                            <v-card-title>AbouKir Hight instsint</v-card-title>
+                            <v-img :src="post.src" height="250"></v-img>
+                            <v-card-title>{{ post.title }}</v-card-title>
                             <v-card-text
                                 ><v-row align="center" class="mx-0"
                                     ><v-rating
@@ -26,79 +32,9 @@
                                 </v-row>
 
                                 <div class="my-4 subtitle-1">
-                                    $Univeristy $Coming Soon
+                                    $Coming Soon
                                 </div>
-                                <div>
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Delectus voluptates
-                                    praesentiuatur?
-                                </div>
-                            </v-card-text>
-                            <v-divider class="mx-4"></v-divider>
-                            <v-card-actions>
-                                <v-btn text color="colorTow">Read More</v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="4">
-                        <v-card>
-                            <v-img :src="src" height="250"></v-img>
-                            <v-card-title>AbouKir Hight instsint</v-card-title>
-                            <v-card-text
-                                ><v-row align="center" class="mx-0"
-                                    ><v-rating
-                                        :value="4.5"
-                                        color="colorTow"
-                                        dense
-                                        half-increments
-                                        readonly
-                                    ></v-rating>
-                                    <div class="ml-4 grey--text">
-                                        4.5
-                                    </div>
-                                </v-row>
-
-                                <div class="my-4 subtitle-1">
-                                    $Univeristy $Coming Soon
-                                </div>
-                                <div>
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Delectus voluptates
-                                    praesentiuatur?
-                                </div>
-                            </v-card-text>
-                            <v-divider class="mx-4"></v-divider>
-                            <v-card-actions>
-                                <v-btn text color="colorTow">Read More</v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="4">
-                        <v-card>
-                            <v-img :src="src" height="250"></v-img>
-                            <v-card-title>AbouKir Hight instsint</v-card-title>
-                            <v-card-text
-                                ><v-row align="center" class="mx-0"
-                                    ><v-rating
-                                        :value="4.5"
-                                        color="colorTow"
-                                        dense
-                                        half-increments
-                                        readonly
-                                    ></v-rating>
-                                    <div class="ml-4 grey--text">
-                                        4.5
-                                    </div>
-                                </v-row>
-
-                                <div class="my-4 subtitle-1">
-                                    $Univeristy $Coming Soon
-                                </div>
-                                <div>
-                                    Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Delectus voluptates
-                                    praesentiuatur?
-                                </div>
+                                <div>{{ post.des }}</div>
                             </v-card-text>
                             <v-divider class="mx-4"></v-divider>
                             <v-card-actions>
@@ -116,10 +52,28 @@
 export default {
     data() {
         return {
-            src: require('~/assets/tem5.jpg')
+            posts: [
+                {
+                    title: 'Front-end App',
+                    src: require('~/assets/post1.jpg'),
+                    des:
+                        "I can make your website's front-end using Vue.js, React.js or Vanilla JavaScript. With a beautiful and interractive UI"
+                },
+                {
+                    title: 'Back-end App',
+                    src: require('~/assets/post2.jpg'),
+                    des:
+                        'I can make your secure & performant back-end RESTful or GraphQL API in Node.js, Express and MongoDB'
+                },
+                {
+                    title: 'Full Stack App',
+                    src: require('~/assets/post3.jpg'),
+                    des:
+                        'I can make your full stack web application in React.js, Vue.js or Vanilla JavaScript Front-end and Node.js or Firebase Back-end'
+                }
+            ]
         }
-    },
-    transitions: 'posts'
+    }
 }
 </script>
 

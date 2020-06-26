@@ -108,123 +108,18 @@
                     </v-col>
                 </v-row>
             </v-card>
-            <!-- Skils -->
-            <v-row class="my-skils" data-aos="zoom-up" data-aos-duration="1500">
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="99"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >HTML</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="95"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >CSS</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="75"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >JavaScript</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="80"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >Vue Js</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="80"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >JQuary</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="75"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >Nuxt Js</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="90"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >Scss</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="90"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >Pug</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="85"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >GitHup</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="70"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >Gulp Js</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="90"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >BootStrap</v-progress-linear
-                    >
-                </v-col>
-                <v-col cols="12" md="6">
-                    <v-progress-linear
-                        value="60"
-                        height="30"
-                        color="colorTow"
-                        class="font-weight-black"
-                        >Vuetify</v-progress-linear
-                    >
-                </v-col>
-            </v-row>
+            <myskils />
         </v-container>
     </div>
 </template>
 
 <script>
-export default {}
+import myskils from '@/components/home/myskils.vue'
+export default {
+    components: {
+        myskils
+    }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -297,9 +192,6 @@ export default {}
                 z-index: -1;
             }
         }
-    }
-    .my-skils div {
-        color: white;
     }
 }
 @media (max-width: 570px) {
