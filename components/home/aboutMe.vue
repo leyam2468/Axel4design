@@ -176,21 +176,6 @@ export default {
             border: 1px solid #999;
             position: relative;
             z-index: 1;
-            img {
-                object-fit: cover;
-            }
-            &::after {
-                position: absolute;
-                content: '';
-                background: linear-gradient(220deg, $color-one 0%, #000 50%);
-
-                border-radius: 5px;
-                top: -20px;
-                right: -20px;
-                width: 200px;
-                height: 200px;
-                z-index: -1;
-            }
         }
     }
 }
