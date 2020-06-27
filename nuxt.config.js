@@ -4,8 +4,12 @@ export default {
      ** Headers of the page
      */
     head: {
-        titleTemplate: '%s - Axel4Design',
+        titleTemplate: '%s - Axel4Design | Front-End Developer',
         title: process.env.npm_package_name || '',
+        htmlAttrs: {
+            lang: 'en',
+            amp: true
+        },
         meta: [
             { charset: 'utf-8' },
             {

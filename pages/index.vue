@@ -9,7 +9,6 @@
         <fotter />
     </v-app>
 </template>
-
 <script>
 import banner from '@/components/home/banner.vue'
 import aboutMe from '@/components/home/aboutMe.vue'
