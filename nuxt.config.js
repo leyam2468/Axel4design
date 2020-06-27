@@ -13,6 +13,10 @@ export default {
                 content: 'width=device-width, initial-scale=1'
             },
             {
+                name: 'google-site-verification',
+                content: 'fI2vvvnwrdwwqZVmas-9SSN4XRAo4ETE6Rx0_C_Ubk8'
+            },
+            {
                 hid: 'description',
                 name: 'description',
                 content: process.env.npm_package_description || ''

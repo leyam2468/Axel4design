@@ -129,4 +129,12 @@ export default {
         letter-spacing: 10px;
     }
 }
+
+@media (max-width: 570px) {
+    .persons {
+        .persons-title-be {
+            letter-spacing: 8px;
+        }
+    }
+}
 </style>
