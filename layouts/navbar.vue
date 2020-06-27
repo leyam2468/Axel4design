@@ -27,9 +27,10 @@
                         {{ item.title }}
                     </v-btn>
                 </v-list-item>
-                <v-spacer></v-spacer>
-                <v-btn block>Login</v-btn>
             </v-list>
+            <template v-slot:append>
+                <v-btn block elevation="8">Login</v-btn>
+            </template>
         </v-navigation-drawer>
 
         <!-- NavBar -->
