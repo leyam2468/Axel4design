@@ -29,7 +29,9 @@
                 </v-list-item>
             </v-list>
             <template v-slot:append>
-                <v-btn block elevation="8">Login</v-btn>
+                <div class="pa-2">
+                    <v-btn block elevation="8">Login</v-btn>
+                </div>
             </template>
         </v-navigation-drawer>
 
