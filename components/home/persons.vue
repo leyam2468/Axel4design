@@ -20,6 +20,7 @@
                         color="colorTow"
                         :href="person.link"
                         target="_blank"
+                        class="px-0"
                     >
                         <v-icon left>{{ person.icon }}</v-icon
                         >{{ person.title }}

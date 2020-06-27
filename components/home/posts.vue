@@ -108,7 +108,7 @@ export default {
 @media (max-width: 570px) {
     .posts {
         .posts-title-be {
-            letter-spacing: 10px;
+            letter-spacing: 8px;
         }
     }
 }
