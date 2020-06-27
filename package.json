@@ -1,7 +1,7 @@
 {
-    "name": "Axel4design",
+    "name": "Axel4design-Front-End Developer",
     "version": "1.0.0",
-    "description": "My Portfolio",
+    "description": "My Portfolio Using: HTML5/Css3/Vue.js/Nuxt.js/Vuex/Vuetify/Scss/Pug/Libs",
     "author": "Mohamed Ahmed",
     "private": true,
     "scripts": {

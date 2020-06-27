@@ -32,7 +32,7 @@ export default {
     methods: {},
     head() {
         return {
-            title: 'Home'
+            title: 'Home Page'
         }
     }
 }
