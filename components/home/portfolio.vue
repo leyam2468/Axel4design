@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <span class="portfolio-title-be" data-aos="fade-up">Axel</span>
         <h2 class="portfolio-title" data-aos="fade-up">Portfolio</h2>
         <div class="portfolio-item my-10">

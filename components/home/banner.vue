@@ -10,12 +10,12 @@
             ></client-only>
             <div class="banner-info">
                 <h3>Welcome To</h3>
-                <h2>Axel<span>4</span>Design</h2>
+                <h1>Axel<span>4</span>Design</h1>
                 <v-divider></v-divider>
                 <div class="media">
                     <v-btn
                         icon
-                        href="https://www.google.com"
+                        href="https://www.facebook.com/leyam24685"
                         target="_blank"
                         class="media-icon"
                     >
@@ -23,7 +23,7 @@
                     </v-btn>
                     <v-btn
                         icon
-                        href="https://www.google.com"
+                        href="https://www.instagram.com/leyam24685"
                         target="_blank"
                         class="media-icon"
                     >
@@ -31,7 +31,7 @@
                     </v-btn>
                     <v-btn
                         icon
-                        href="https://www.google.com"
+                        href="https://github.com/leyam2468"
                         target="_blank"
                         class="media-icon"
                     >
@@ -39,7 +39,7 @@
                     </v-btn>
                     <v-btn
                         icon
-                        href="https://www.google.com"
+                        href="https://codepen.io/mm-m"
                         target="_blank"
                         class="media-icon"
                     >
@@ -47,7 +47,7 @@
                     </v-btn>
                     <v-btn
                         icon
-                        href="https://www.google.com"
+                        href="https://api.whatsapp.com/send?phone=01023909759"
                         target="_blank"
                         class="media-icon"
                     >
@@ -55,7 +55,7 @@
                     </v-btn>
                     <v-btn
                         icon
-                        href="https://www.google.com"
+                        href="mailto:leyamm3@gmail.com"
                         target="_blank"
                         class="media-icon"
                     >
@@ -117,9 +117,12 @@ export default {
         color: white;
         h3 {
             font-size: 3rem;
-            letter-spacing: 0px;
+            letter-spacing: 5px;
+
+            font-weight: 300;
+            font-style: italic;
         }
-        h2 {
+        h1 {
             font-size: 6rem;
             letter-spacing: 8px;
             span {
@@ -185,10 +188,9 @@ export default {
         .banner-info {
             h3 {
                 font-size: 2rem;
-                letter-spacing: 5px;
             }
 
-            h2 {
+            h1 {
                 font-size: 2.5rem;
             }
             .links {

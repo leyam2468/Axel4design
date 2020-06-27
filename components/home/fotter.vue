@@ -1,5 +1,5 @@
 <template>
-    <div class="fotter">
+    <div id="fotter" class="fotter">
         <h4>
             @Copyright 2020 All Right Reserved By
             <a target="_blank" href="https://www.facebook.com/leyam24685"

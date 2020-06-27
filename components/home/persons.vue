@@ -1,5 +1,5 @@
 <template>
-    <div class="persons overflow-hidden">
+    <div id="education" class="persons overflow-hidden">
         <span class="persons-title-be" data-aos="fade-up">Axel</span>
         <h2 class="persons-title" data-aos="fade-up">Education</h2>
         <v-container>

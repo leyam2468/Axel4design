@@ -49,7 +49,11 @@ export default {
     buildModules: [
         // Doc: https://github.com/nuxt-community/eslint-module
         '@nuxtjs/eslint-module',
-        '@nuxtjs/vuetify'
+        '@nuxtjs/vuetify',
+        /* VUe Scroll to */
+        'vue-scrollto/nuxt',
+        // Or if you have custom options...
+        ['vue-scrollto/nuxt', { duration: 1000 }]
     ],
     /*
      ** Nuxt.js modules

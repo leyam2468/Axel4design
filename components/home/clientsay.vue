@@ -1,5 +1,5 @@
 <template>
-    <div class="clientsay">
+    <div id="client" class="clientsay">
         <span class="clientsay-title-be" data-aos="fade-up">Axel</span>
         <h2 class="clientsay-title" data-aos="fade-up">Client Say</h2>
         <!-- slider Client Say -->

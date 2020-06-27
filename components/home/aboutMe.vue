@@ -1,5 +1,5 @@
 <template>
-    <div class="about-me">
+    <div id="about" class="about-me">
         <v-container>
             <v-card color="colorOne" class="about-area p-10" elevation="5">
                 <v-row

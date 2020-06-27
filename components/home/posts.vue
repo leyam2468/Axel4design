@@ -1,5 +1,5 @@
 <template>
-    <div class="posts">
+    <div id="posts" class="posts">
         <span class="posts-title-be" data-aos="fade-up">Axel</span>
         <h2 class="posts-title" data-aos="fade-up">
             Last Posts

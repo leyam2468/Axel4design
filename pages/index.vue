@@ -1,5 +1,5 @@
 <template>
-    <v-app class="home">
+    <v-app id="home" class="home">
         <banner />
         <aboutMe />
         <portfolio />

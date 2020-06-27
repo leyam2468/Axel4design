@@ -2,6 +2,7 @@
     <div>
         <!-- SideBar -->
         <v-navigation-drawer v-model="siteNav" color="colorOne" fixed temporary>
+            <!-- Top section -->
             <v-img :aspect-ratio="16 / 10" :src="src" position="bottom">
                 <v-row
                     align="end"
@@ -15,12 +16,12 @@
                     </v-col>
                 </v-row>
             </v-img>
+            <!-- Links -->
             <v-list dense nav class="py-5">
-                <!-- 1-2 -->
                 <v-list-item
                     v-for="item in items"
-                    :key="item.title"
-                    :to="item.to"
+                    :key="item.el"
+                    v-scroll-to="item.el"
                 >
                     <v-btn text class="font-weight-bold" nuxt>
                         <v-icon left>{{ item.icon }}</v-icon>
@@ -28,6 +29,7 @@
                     </v-btn>
                 </v-list-item>
             </v-list>
+            <!-- buttom Section -->
             <template v-slot:append>
                 <div class="pa-2">
                     <v-btn block elevation="8">Login</v-btn>
@@ -46,18 +48,18 @@
             <v-app-bar-nav-icon
                 @click.stop="siteNav = !siteNav"
             ></v-app-bar-nav-icon>
-
+            <!-- title logo -->
             <v-toolbar-title class="font-weight-bold text-uppercase font-one">
                 Axel<span class="color-one">4</span>Design
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
-
+            <!-- links -->
             <v-toolbar-items class="hidden-xs-only">
                 <v-btn
                     v-for="item in items"
-                    :key="item.id"
-                    :to="item.to"
+                    :key="item.title"
+                    v-scroll-to="item.el"
                     text
                     class="font-weight-bold"
                     nuxt
@@ -65,6 +67,7 @@
                     <v-icon left>{{ item.icon }}</v-icon>
                     {{ item.title }}
                 </v-btn>
+                <!-- dark -->
                 <v-btn icon @click="toggletheme">
                     <v-icon>
                         mdi-{{
@@ -95,7 +98,7 @@
                     </v-card>
                 </v-dialog>
             </v-toolbar-items>
-
+            <!-- btns dark and sitting -->
             <v-toolbar-items class="hidden-sm-and-up">
                 <v-btn icon @click="toggletheme">
                     <v-icon>
@@ -120,26 +123,37 @@ export default {
             src: require('~/assets/logo2.png'),
             items: [
                 {
-                    icon: 'mdi-apps',
+                    el: '#home',
                     title: 'Home',
-                    to: '/'
+                    icon: 'mdi-account-alert'
                 },
                 {
-                    icon: 'mdi-account-alert',
+                    el: '#about',
                     title: 'About',
-                    to: '/About'
+                    icon: 'mdi-account-alert'
                 },
                 {
-                    icon: 'mdi-card-account-phone',
-                    title: 'Contact',
-                    to: '/contact'
-                },
-                {
-                    icon: 'mdi-account-alert',
+                    el: '#portfolio',
                     title: 'Portfolio',
-                    to: '/portfolio'
+                    icon: 'mdi-account-alert'
+                },
+                {
+                    el: '#client',
+                    title: 'Client Say',
+                    icon: 'mdi-account-alert'
+                },
+                {
+                    el: '#posts',
+                    title: 'Posts',
+                    icon: 'mdi-account-alert'
+                },
+                {
+                    el: '#education',
+                    title: 'Education',
+                    icon: 'mdi-account-alert'
                 }
-            ]
+            ],
+            links: []
         }
     },
     methods: {
