@@ -165,10 +165,6 @@ export default {
                     font-size: 20px;
                 }
             }
-            .info-area-btn {
-                .info-area-btn-cv {
-                }
-            }
         }
         .about-img {
             height: 500px;

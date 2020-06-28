@@ -118,7 +118,7 @@ export default {
         h3 {
             font-size: 3rem;
             letter-spacing: 5px;
-
+            font-family: $font-one;
             font-weight: 300;
             font-style: italic;
         }

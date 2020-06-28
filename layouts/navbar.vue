@@ -125,7 +125,7 @@ export default {
                 {
                     el: '#home',
                     title: 'Home',
-                    icon: 'mdi-account-alert'
+                    icon: 'mdi-apps'
                 },
                 {
                     el: '#about',
@@ -135,22 +135,22 @@ export default {
                 {
                     el: '#portfolio',
                     title: 'Portfolio',
-                    icon: 'mdi-account-alert'
+                    icon: 'mdi-solar-panel-large'
                 },
                 {
                     el: '#client',
                     title: 'Client Say',
-                    icon: 'mdi-account-alert'
+                    icon: 'mdi-account-cash'
                 },
                 {
                     el: '#posts',
                     title: 'Posts',
-                    icon: 'mdi-account-alert'
+                    icon: 'mdi-card-account-mail'
                 },
                 {
                     el: '#education',
                     title: 'Education',
-                    icon: 'mdi-account-alert'
+                    icon: 'mdi-cast-education'
                 }
             ],
             links: []

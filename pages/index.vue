@@ -23,6 +23,7 @@ export default {
         banner,
         aboutMe,
         portfolio,
+
         clientsay,
         posts,
         persons,
