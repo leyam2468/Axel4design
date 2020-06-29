@@ -29,6 +29,7 @@ export default {
         persons,
         fotter
     },
+
     methods: {},
     head() {
         return {

@@ -61,7 +61,13 @@ export default {
         /* VUe Scroll to */
         'vue-scrollto/nuxt',
         // Or if you have custom options...
-        ['vue-scrollto/nuxt', { duration: 1000 }]
+        [
+            'vue-scrollto/nuxt',
+            {
+                duration: 1000,
+                easing: 'ease-in-out'
+            }
+        ]
     ],
     /*
      ** Nuxt.js modules

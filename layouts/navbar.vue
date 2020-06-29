@@ -50,7 +50,11 @@
             ></v-app-bar-nav-icon>
             <!-- title logo -->
             <v-toolbar-title class="font-weight-bold text-uppercase font-one">
-                Axel<span class="color-one">4</span>Design
+                <nuxt-link
+                    to="/"
+                    :class="[darktheme ? 'black--text' : 'white--text']"
+                    >Axel<span class="color-one">4</span>Design</nuxt-link
+                >
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
@@ -67,6 +71,9 @@
                     <v-icon left>{{ item.icon }}</v-icon>
                     {{ item.title }}
                 </v-btn>
+            </v-toolbar-items>
+            <!-- icons links -->
+            <v-toolbar-items>
                 <!-- dark -->
                 <v-btn icon @click="toggletheme">
                     <v-icon>
@@ -97,16 +104,6 @@
                         </v-toolbar>
                     </v-card>
                 </v-dialog>
-            </v-toolbar-items>
-            <!-- btns dark and sitting -->
-            <v-toolbar-items class="hidden-sm-and-up">
-                <v-btn icon @click="toggletheme">
-                    <v-icon>
-                        mdi-{{
-                            `${darktheme ? 'weather-night' : 'brightness-6'}`
-                        }}</v-icon
-                    >
-                </v-btn>
             </v-toolbar-items>
         </v-app-bar>
     </div>
@@ -165,10 +162,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.v-btn--active:hover::before,
-.v-btn--active::before {
-    background-color: red;
-    opacity: 0.8;
-}
-</style>
+<style lang="scss" scoped></style>

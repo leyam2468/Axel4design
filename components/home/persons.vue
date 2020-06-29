@@ -38,7 +38,7 @@ export default {
             persons: [
                 {
                     src: require('~/assets/elzero.jpg'),
-                    title: 'Elzero Web School',
+                    title: 'Elzero School',
                     icon: 'mdi-youtube',
                     link:
                         'https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ'
