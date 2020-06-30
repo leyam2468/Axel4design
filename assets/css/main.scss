@@ -16,7 +16,7 @@ $font-one: 'Lato', sans-serif !important;
 .page-enter,
 .page-leave-active {
     opacity: 0;
-    transform: scale(0);
+    transform: scaleY(0);
 }
 
 body,

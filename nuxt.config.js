@@ -49,7 +49,8 @@ export default {
      */
     plugins: [
         { src: '~plugins/vue-particles', ssr: false },
-        { src: '~plugins/aos', ssr: false }
+        { src: '~plugins/aos', ssr: false },
+        { src: '~plugins/directives', ssr: true }
     ],
     /*
      ** Nuxt.js dev-modules

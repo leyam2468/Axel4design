@@ -7,6 +7,7 @@
         <posts />
         <persons />
         <fotter />
+        <scrollTop />
     </v-app>
 </template>
 <script>
@@ -17,6 +18,7 @@ import clientsay from '@/components/home/clientsay.vue'
 import posts from '@/components/home/posts.vue'
 import persons from '@/components/home/persons.vue'
 import fotter from '@/components/home/fotter.vue'
+import scrollTop from '@/components/scrollTop.vue'
 
 export default {
     components: {
@@ -27,7 +29,8 @@ export default {
         clientsay,
         posts,
         persons,
-        fotter
+        fotter,
+        scrollTop
     },
 
     methods: {},

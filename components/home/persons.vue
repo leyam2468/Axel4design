@@ -9,6 +9,7 @@
                     :key="person.title"
                     cols="6"
                     md="3"
+                    class="d-flex justify-center align-center flex-column"
                     data-aos="zoom-up"
                     data-aos-duration="2000"
                 >
